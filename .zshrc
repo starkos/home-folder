@@ -1,7 +1,7 @@
 # Command history settings
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=$HISTSIZE
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=$HISTSIZE
 
 setopt APPEND_HISTORY       # append rather than overwrite on exit
 setopt HIST_IGNORE_DUPS     # don't record duplicate commands
@@ -10,9 +10,12 @@ setopt HIST_VERIFY          # when recalling history, reload prompt instead of e
 setopt INC_APPEND_HISTORY   # append after each command, instead of on exit
 setopt SHARE_HISTORY        # share history between all sessions
 
+# Golang configuration
+export GOPATH=~/Projects/go
+
 # Standard variables
-EDITOR=code
-PATH=$PATH:~/.bin
+export EDITOR=code
+export PATH=$PATH:~/.bin:$GOPATH/bin
 
 # Set prompt
 #  1. `%F{69}`: set highlight color; see https://jonasjacek.github.io/colors
@@ -20,4 +23,4 @@ PATH=$PATH:~/.bin
 #  3. `%1~`: show the last part of the working directory
 #  4. `%f` turn off highlight color set in (1.)
 #  5. `%#`: show "#" is prompt is elevated, "%" otherwise
-PROMPT='%F{69}%(?.√.%F{red}[%?]%f) %1~%f %# '
+export PROMPT='%F{69}%(?.√.%F{red}[%?]%f) %1~%f %# '
