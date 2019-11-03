@@ -1,5 +1,8 @@
 # Command history settings
 HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
+
 setopt APPEND_HISTORY       # append rather than overwrite on exit
 setopt HIST_IGNORE_DUPS     # don't record duplicate commands
 setopt HIST_REDUCE_BLANKS   # don't record blank links
