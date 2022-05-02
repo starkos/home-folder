@@ -15,7 +15,8 @@ export GOPATH=~/Projects/go
 
 # Standard variables
 export EDITOR=code
-export PATH=$PATH:~/.bin:$GOPATH/bin
+export JAVA_HOME=$HOME/Applications/JDK-18/Contents/Home
+export PATH=~/.bin:~/.dotnet/tools:$JAVA_HOME/bin:$PATH
 
 # Set prompt
 #  1. `%F{69}`: set highlight color; see https://jonasjacek.github.io/colors
