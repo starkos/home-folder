@@ -15,7 +15,7 @@ export GOPATH=~/Projects/go
 
 # Standard variables
 export EDITOR=code
-export JAVA_HOME=$HOME/Applications/JDK-18/Contents/Home
+export JAVA_HOME=$HOME/Applications/JDK11/Contents/Home
 export PATH=~/.bin:~/.dotnet/tools:$JAVA_HOME/bin:$PATH
 
 # Set prompt
@@ -25,3 +25,7 @@ export PATH=~/.bin:~/.dotnet/tools:$JAVA_HOME/bin:$PATH
 #  4. `%f` turn off highlight color set in (1.)
 #  5. `%#`: show "#" is prompt is elevated, "%" otherwise
 export PROMPT='%F{69}%(?.√.%F{red}[%?]%f) %1~%f %# '
+
+# ITS variables
+export IdcpEnvironment=Dev--JasonPerkins
+export PATH=$PATH:$HOME/Projects/ITS/Company/Scripts
